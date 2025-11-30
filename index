@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Os Simpsons — Personagens</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Os Simpsons — Personagens</h1>
+      <p class="subtitle">(Simpsons API)</p>
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="Pesquisar personagem..." />
+        <button id="searchBtn">Pesquisar</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section id="statusBar" class="status-bar" aria-live="polite"></section>
+
+    <section id="cardsContainer" class="cards-grid" aria-label="Personagens">
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Projeto API dos Simpsons</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
