@@ -7,7 +7,7 @@ const searchBtn = document.getElementById("searchBtn");
 
 let allCharacters = [];
 
-// Busca os personagens da API
+
 async function fetchCharacters() {
   try {
     statusBar.textContent = "Carregando personagens...";
@@ -24,7 +24,7 @@ async function fetchCharacters() {
   }
 }
 
-// Cria os cards dinamicamente
+
 function renderCards(list) {
   cardsContainer.innerHTML = "";
   if (!list.length) {
@@ -61,7 +61,7 @@ function renderCards(list) {
   });
 }
 
-// Filtro de pesquisa
+
 searchBtn.addEventListener("click", () => {
   const q = searchInput.value.trim().toLowerCase();
   const filtered = allCharacters.filter(c =>
@@ -71,10 +71,11 @@ searchBtn.addEventListener("click", () => {
   statusBar.textContent = `Encontrados ${filtered.length} personagens.`;
 });
 
-// Enter no campo ativa pesquisa
+
 searchInput.addEventListener("keydown", e => {
   if (e.key === "Enter") searchBtn.click();
 });
 
-// Inicializa
+
 document.addEventListener("DOMContentLoaded", fetchCharacters);
+
